@@ -34,10 +34,10 @@ public class Main {
         for (char c : parentheses.toCharArray()) {
             if (hashmap.containsValue(c)) {
                 stack.addFirst(c);
-                System.out.println(stack + " -> " + parentheses);
+//                System.out.println(stack + " -> " + parentheses);
             } else if (hashmap.containsKey(c)) {
                 if (stack.isEmpty() || stack.pollFirst() != hashmap.get(c)) {
-                    System.out.println(stack);
+//                    System.out.println(stack " -> " + parentheses +" return false");
                     return false;
 
                 }
